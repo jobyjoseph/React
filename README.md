@@ -1,6 +1,6 @@
 When we use JSX in our project, we need a JSX preprocessor to compile it to JS React components.
 
-*Steps to run*
+**Steps to run**
 - Go to this project folder.
 - Run `npm install`. It will install `babel-cli` and `babel-preset-react-app`
 
