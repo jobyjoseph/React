@@ -11,3 +11,6 @@ npx babel --watch src --out-dir . --presets react-app/prod
 `npx` is a package runner tool that comes with npm 5.2+. Above command watch for any changes in `src` folder. It writes the compiled output to root folder.
 
 Now if you run `index.html` you can see LikeButton component in our page.
+
+
+We can insert JavaScript expression inside JSX using `{}`. We can write JSX in multilines. At that time it is good to wrap them in `()` to prevent automatic semicolon(;) insertion.
