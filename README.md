@@ -1,8 +1,7 @@
-React is a JavaScript library for building user interfaces.
+This branch shows how selective rendering works in React. You can run this project by first running `npm install` to install babel dependencies.
 
-**Recommended Toolchains**
-- If you’re learning React or creating a new single-page app, use [Create React App](https://github.com/facebook/create-react-app).
-- If you’re building a server-rendered website with Node.js, try [Next.js](https://nextjs.org/).
-- If you’re building a static content-oriented website, try [Gatsby](https://www.gatsbyjs.org/).
+Later execute `npx babel --watch src --out-dir . --presets react-app/prod` to compile the jsx file inside src/script.js and place the compiled version in script.js.
 
-[1. Add JSX to React Project](https://github.com/jobyjoseph/React/tree/01-add-jsx-to-project)
+Now run index.html to see how rendering works. Enable paint flash rendering in Chrome to see how React intelligently renders only the date line.
+
+Similary run index-jquery.html to see how jQuery renders the block.
