@@ -5,4 +5,6 @@ React is a JavaScript library for building user interfaces.
 - If you’re building a server-rendered website with Node.js, try [Next.js](https://nextjs.org/).
 - If you’re building a static content-oriented website, try [Gatsby](https://www.gatsbyjs.org/).
 
+All React components must act like pure functions with respect to their props. ie. Inside a component, we should not change the value of props.
+
 [1. Add JSX to React Project](https://github.com/jobyjoseph/React/tree/01-add-jsx-to-project)
