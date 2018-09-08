@@ -11,3 +11,11 @@ All React components must act like pure functions with respect to their props. i
 [1. Add JSX to React Project](https://github.com/jobyjoseph/React/tree/01-add-jsx-to-project)
 
 ## Introducing JSX
+
+JSX looks like html inside JavaScript
+
+```javascript
+const element = <h1>Hello, world!</h1>;
+```
+
+It has the full power of JavaScript. We do not have to wrap JSX inside quotes.
