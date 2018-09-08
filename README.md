@@ -19,3 +19,12 @@ const element = <h1>Hello, world!</h1>;
 ```
 
 It has the full power of JavaScript. We do not have to wrap JSX inside quotes.
+
+### Embedding Expressions in JSX
+
+We can embed JavaScript expressions in JSX using `{}`
+
+```javascript
+const name = "Joby";
+const element = <h1>Name is {name}</h1>;
+```
