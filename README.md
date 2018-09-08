@@ -28,3 +28,5 @@ We can embed JavaScript expressions in JSX using `{}`
 const name = "Joby";
 const element = <h1>Name is {name}</h1>;
 ```
+
+`{}` can contain any JavaScript expressions like conditions, arithmetic calculations and so on.
