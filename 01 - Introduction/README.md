@@ -1,0 +1,1 @@
+React is JavaScript library(not framework) for building user interfaces. User interfaces are created using _components_. Components are custom html elements which we can define and then reuse.
