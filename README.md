@@ -1,7 +1,6 @@
 React is a JavaScript library for building user interfaces. Building blocks in a React website are _components_ and components can be treated as reusable custom html.
 
-## Project 1
-[Hello World React project](https://github.com/jobyjoseph/React/tree/01-react-hello-world) without JSX will give us an idea how we can quickly create a React component and use it in our html page.
+>[Project 1: Hello World React project](https://github.com/jobyjoseph/React/tree/01-react-hello-world) without JSX will give us an idea how we can quickly create a React component and use it in our html page.
 
 **Recommended Toolchains**
 
