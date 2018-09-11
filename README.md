@@ -20,7 +20,7 @@ JSX looks like html inside JavaScript. It has the full power of JavaScript. JSX 
 const element = <h1>Hello, world!</h1>;
 ```
 
-Let us see how we can rewrite _Project 1_ using JSX.
+>[Project 2: Hello World using JSX](https://github.com/jobyjoseph/React/tree/02-react-component-jsx) rewrites Project 1 using JSX
 
 ### Embedding Expressions in JSX
 
