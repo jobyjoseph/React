@@ -8,6 +8,9 @@ const element = <h1>Hello, world!</h1>;
 
 >[Project 2: Hello World using JSX](https://github.com/jobyjoseph/React/tree/02-react-component-jsx)
 
+[Demo: Hello World using JSX](https://codepen.io/jobyjoseph/pen/qMYvxB)
+
+
 ### Embedding Expressions in JSX
 
 We can embed JavaScript expressions in JSX using `{}`
@@ -18,3 +21,5 @@ const element = <h1>Name is {name}</h1>;
 ```
 
 `{}` can contain any JavaScript expressions like conditions, arithmetic calculations and so on.
+
+[Demo: Expressions in JSX](https://codepen.io/jobyjoseph/pen/YOLggp)
