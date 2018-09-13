@@ -6,8 +6,6 @@ JSX looks like html inside JavaScript. It has the full power of JavaScript. JSX 
 const element = <h1>Hello, world!</h1>;
 ```
 
->[Project 2: Hello World using JSX](https://github.com/jobyjoseph/React/tree/02-react-component-jsx)
-
 [Demo: Hello World using JSX](https://codepen.io/jobyjoseph/pen/qMYvxB)
 
 
