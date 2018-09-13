@@ -1,3 +1,11 @@
+React is UI library to create Components. Components can be treated as a set of reusable HTML.
+
+We can write React components using pure JavaScript. But for a big project, it will be difficult. So using JSX, developers can write html like code inside React components. Later we use transpilers like Babel to convert JSX to pure JavaScript which browsers can understand.
+
+React components can be classified into:
+1. Functional Components
+2. Class Components
+
 ## React Project Tech Stack
 When we write a big React project, we need a build workflow. A good build workflow ensures that our project is optimized, high performing, backward compatible and minimized. Here we discuss some of the tools we use in a typical React project.
 
