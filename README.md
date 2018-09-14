@@ -1,9 +1,9 @@
-React is UI library to create Components. Components can be treated as a set of reusable HTML.
+React is UI library to create [Components](https://github.com/jobyjoseph/React/tree/master/01%20-%20Introduction). Components can be treated as a set of reusable HTML.
 
-We can write React components using pure JavaScript. But for a big project, it will be difficult. So using JSX, developers can write html like code inside React components. Later we use transpilers like Babel to convert JSX to pure JavaScript which browsers can understand.
+We can write React components using pure JavaScript. But for a big project, it will be difficult. So using [JSX](https://github.com/jobyjoseph/React/tree/master/02%20-%20JSX%20Introduction), developers can write html like code inside React components. Later we use transpilers like Babel to convert JSX to pure JavaScript which browsers can understand.
 
 React components can be classified into:
-1. Functional Components
+1. [Functional Components](https://github.com/jobyjoseph/React/tree/master/03%20-%20Functional%20Components)
 2. Class Components
 
 ## React Project Tech Stack
