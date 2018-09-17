@@ -9,3 +9,31 @@ Above code is an example of _functional component_ also known in other names suc
 
 ## Dynamic Content
 We can output dynamic content by evaluating expressions inside functional components. Below component shows current date and time each time the component is called.
+```javascript
+const person = () => <p>I am feeling good {(new Date()).toLocaleString()}</p>
+```
+
+## `props`
+We can make our functional components accept properties.
+```javascript
+const person = (props) => <p>I am {props.name} and I love {props.love}</p>
+```
+and use it like
+```html
+<Person name="Joby" love="food"/>
+```
+
+## Component Children
+Components can accept the content that comes between start and closing tags. Like:
+```html
+<Person name="Joby" love="food">
+    My favorite is idly and vada
+</Person>
+```
+The content can be received in `props.children` property.
+```javascript
+const person = (props) => (<p>
+    I am {props.name} and I love {props.love}.
+    {props.children}
+</p>);
+```
