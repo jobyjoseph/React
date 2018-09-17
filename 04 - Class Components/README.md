@@ -68,3 +68,4 @@ class Clock extends React.Component {
     }
 }
 ```
+`state` is declared, initialized and used as a normal class property. But the speciality of `state` is that, if the value of state is updated, React automatically updates the DOM.
