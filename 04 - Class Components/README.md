@@ -69,3 +69,32 @@ class Clock extends React.Component {
 }
 ```
 `state` is declared, initialized and used as a normal class property. But the speciality of `state` is that, if the value of state is updated, React automatically updates the DOM.
+
+## Updating State
+`state` can only be updated using `setState()`. Then only react can automatically rerender the component.
+
+```javascript
+class Clock extends React.Component {
+    // Initializing a state
+    state = {
+        count : 1
+    }
+
+    increment = () => {
+        // Updating state
+        this.setState({
+            count: this.state.count + 1
+        });
+    }
+
+    render() {
+        return (
+            <div>
+                <button onClick={this.increment}>Increment</button>
+                <h1>{this.state.count}</h1>
+            </div>
+        );
+    }
+}
+```
+Here when the button updates the state, the count is updated automatically in the component.
