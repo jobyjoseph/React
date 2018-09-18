@@ -152,3 +152,40 @@ class Clock extends React.Component {
 }
 ```
 Here we are passing `10` to the handler function. Using `.bind()` method is more efficient.
+
+## Two way binding
+Say we have a textbox in our Clock component to accept the increment value. So in one direction, we need to get that value from textbox and save in state. Later in reverse direction our component should use that state to update the component. That is two way binding.
+```javascript
+class Clock extends React.Component {
+    // Initializing a state
+    state = {
+        count : 1,
+        interval : 1
+    }
+
+    increment = () => {
+        // Updating state
+        this.setState({
+            count: this.state.count + this.state.interval
+        });
+    }
+
+    inputChangeHandler = (event) => {
+        // Get new value from input and update state
+        this.setState({
+            interval : event.target.value * 1 // convert to number
+        })
+    }
+
+    render() {
+        return (
+            <div>
+                <input type="text" onChange={this.inputChangeHandler} />
+                <button onClick={this.increment}>Increment</button>
+                <h1>{this.state.count}</h1>
+            </div>
+        );
+    }
+}
+```
+`event.target.value` will have the value from input control.
