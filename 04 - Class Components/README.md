@@ -98,3 +98,57 @@ class Clock extends React.Component {
 }
 ```
 Here when the button updates the state, the count is updated automatically in the component.
+
+## Passing argument to event handler
+We can use `.bind()` method to pass arguments to event handler methods. First argument of `.bind()` defines the invocation context for the handler function. Subsequent arguments are passed to handler function as its arguments.
+```javascript
+class Clock extends React.Component {
+    // Initializing a state
+    state = {
+        count : 1
+    }
+
+    increment = (interval = 1) => {
+        // Updating state
+        this.setState({
+            count: this.state.count + interval
+        });
+    }
+
+    render() {
+        return (
+            <div>
+                <button onClick={this.increment.bind(this, 5)}>Increment</button>
+                <h1>{this.state.count}</h1>
+            </div>
+        );
+    }
+}
+```
+
+Another way to pass arguments to handler functions is to use _Arrow Functions_.
+```javascript
+class Clock extends React.Component {
+    // Initializing a state
+    state = {
+        count : 1
+    }
+
+    increment = (interval = 1) => {
+        // Updating state
+        this.setState({
+            count: this.state.count + interval
+        });
+    }
+
+    render() {
+        return (
+            <div>
+                <button onClick={ () => this.increment(10)}>Increment</button>
+                <h1>{this.state.count}</h1>
+            </div>
+        );
+    }
+}
+```
+Here we are passing `10` to the handler function. Using `.bind()` method is more efficient.
