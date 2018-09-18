@@ -30,13 +30,13 @@ class Person extends React.Component {
 }
 ```
 and use it like
-```html
+```javascript
 <Person name="Joby" love="food"/>
 ```
 
 ## Component Children
 Components can accept the content that comes between start and closing tags. Like:
-```html
+```javascript
 <Person name="Joby" love="food">
     My favorite is idly and vada
 </Person>
