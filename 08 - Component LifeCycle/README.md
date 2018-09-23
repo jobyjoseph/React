@@ -35,12 +35,13 @@ Third stage, `render()` is executed. Executing `render()` does not always update
 
 Fourth stage, `componentDidMount()` is executed finally during _Component Creation_. We can cause side effects like API calls here. If a component is used _n_ times, `componentDidMount()` of _n_ executions happens after mounting all _n_ components.
 
-## Phase 2: Component Creation
+## Phase 2: Component Updation
 During update of a component, following lifecycle methods are executed in the order: 
 * `componentWillReceiveProps(nextProps)`
 * `shouldComponentUpdate(nextProps, nextState)`
 * `componentWillUpdate(nextProps, nextState)`
 * `render()`
+* `componentDidUpdate()`
 
 First stage: When `componentWillReceiveProps()` is fired, it receives the new set of props as arguments. We can set this new props to local state if needed. We should not do any API calls in this method.
 
