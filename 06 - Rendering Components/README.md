@@ -102,3 +102,15 @@ class App extends Component {
   }
 }
 ```
+
+## React Fragments
+Sometimes we have to use an extra dom element just to wrap all inner child elements. React v16.2 bring a solution for the same by `Framents`. We can use it like:
+```javascript
+render() {
+  return (
+    <React.Fragment>
+      {// JSX here}
+    </React.Fragment>
+  )
+}
+```

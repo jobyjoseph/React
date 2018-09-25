@@ -51,4 +51,4 @@ Third stage: Inside `componentWillUpdate(nextProps, nextState)` also, we should 
 
 Fourth stage: `render()` will update all child components. After updating all child components, react moves to fifth stage.
 
-Fifth stage: `componentDidUpdate()` . We can do API calls here.
+Fifth stage: `componentDidUpdate()` . We can do API calls here. Inside `componentDidUpdate()`, `nextProps` and `nextState` become `this.props` and `this.state` respectively.
